@@ -11,7 +11,7 @@ public class Mainline {
 			checking.setAccountDescription("My personal checking account");
 			checking.setInitialBalance(500);
 			checking.getAccountStatus();
-			checking.deposit(700);
+			checking.deposit(200);
 			checking.getAccountStatus();
 			checking.withdraw(600);
 			checking.getAccountStatus();
