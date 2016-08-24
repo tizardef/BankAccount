@@ -53,6 +53,30 @@ public class Account {
 			accountId = currentAccountId;
 			
 		}
+		/**
+		 * @return the description
+		 */
+		public String getDescription() {
+			return description;
+		}
+		/**
+		 * @param description the description to set
+		 */
+		public void setDescription(String description) {
+			this.description = description;
+		}
+		/**
+		 * @return the accountBalance
+		 */
+		private double getAccountBalance() {
+			return accountBalance;
+		}
+		/**
+		 * @param accountBalance the accountBalance to set
+		 */
+		public void setAccountBalance(double accountBalance) {
+			this.accountBalance = accountBalance;
+		}
 		public int getAccountId() {
 			return accountId;
 		}
@@ -63,6 +87,11 @@ public class Account {
 		
 		public void transferFrom(Account account, double amount) {
 			
-			
+			if (account.getAccountBalance()> amount){
+				account.withdraw(amount);
+				this.deposit(amount);
+			}else
+//
+				System.out.println("Insufficient funds ");
 		}
 }
