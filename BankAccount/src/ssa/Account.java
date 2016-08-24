@@ -68,7 +68,7 @@ public class Account {
 		/**
 		 * @return the accountBalance
 		 */
-		private double getAccountBalance() {
+		private double getBalance() {
 			return accountBalance;
 		}
 		/**
