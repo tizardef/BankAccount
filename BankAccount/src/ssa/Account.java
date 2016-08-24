@@ -12,6 +12,11 @@ public class Account {
 			   this.accountBalance = 0;
 		
 		}
+		public Account(double accountBalance) {
+			this.accountBalance = accountBalance;
+		}
+		
+		
 		public Account(String description) {
 			   this.description = description;
 			   this.accountBalance = 0;
@@ -23,7 +28,7 @@ public class Account {
 			
 		}
 		//deposit method
-		void deposit(double depositAmount) {
+		public void deposit(double depositAmount) {
 			 accountBalance = accountBalance + depositAmount;
 		}
 		//withdraw method
@@ -68,13 +73,13 @@ public class Account {
 		/**
 		 * @return the accountBalance
 		 */
-		private double getBalance() {
+		public double getAccountBalance() {
 			return accountBalance;
 		}
 		/**
 		 * @param accountBalance the accountBalance to set
 		 */
-		public void setAccountBalance(double accountBalance) {
+		private void setAccountBalance(double accountBalance) {
 			this.accountBalance = accountBalance;
 		}
 		public int getAccountId() {
