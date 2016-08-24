@@ -73,7 +73,7 @@ public class Account {
 		/**
 		 * @return the accountBalance
 		 */
-		public double getAccountBalance() {
+		public double getBalance() {
 			return accountBalance;
 		}
 		/**
@@ -92,7 +92,7 @@ public class Account {
 		
 		public void transferFrom(Account account, double amount) {
 			
-			if (account.getAccountBalance()> amount){
+			if (account.getBalance()> amount){
 				account.withdraw(amount);
 				this.deposit(amount);
 			}else
